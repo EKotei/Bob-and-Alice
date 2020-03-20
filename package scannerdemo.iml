@@ -1,2 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4" />
+import java.util.Scanner;
+public class scannerdemo {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+
+        boolean person = true;
+        while (person) {
+            System.out.println("What is your name?");
+            String input = scan.nextLine();
+
+
+            if (input.equalsIgnoreCase("Alice") || input.equalsIgnoreCase("bob")) {
+
+                    System.out.println("Greetings " + input);
+                    // System.out.println("Greetings" + person);
+                    person = false;
+
+
+            }
+
+        }
+    }
+}
+
+
+
+
